@@ -25,10 +25,33 @@ public class SimpleTypes {
         System.out.println("Rozmiar stopy bedzie " + footSize + "cm.");
 
         boolean isPaid = false;
-        System.out.println("Czy zaplacono rachunek?" + isPaid);
+        String isPaidTxt = isPaid ? "tak" : "nie";
+        System.out.println("Czy zaplacono rachunek? " + isPaidTxt);
         isPaid = true;
-        System.out.println("A moze teraz juz zaplacone? " + isPaid);
-        //pokazalizmy przyklad prawdy i nie prawdy.
+        isPaidTxt = isPaid ? "tak" : "nie";
+        System.out.println("A moze teraz juz zaplacone? " + isPaidTxt);
+        //pokazalizmy przyklad prawdy i nie prawdy. Dodalismy jeszcze "string"
+
+        int index = 1;
+        String name = "Stanislav";
+        char letter = name.charAt(index);
+        //ta metode .charAt() musze powtuzyc. Niby pokazuje na co mam zwrocic uwage. Czyli na jaka literke.
+        System.out.println((index + 1) + " literka w imieniu " + name + " to " + letter);
+
+        // shift + F6 to kombinacja za pomoca ktorej mozemy zmieniac nazwe zmniennych albo czegokolwiek, na raz,
+        // w roznych miejscach. A nie po koleje. W koncu klikamy enter.
+        // prefix to poczatek slow.
+
+        String prefix = "St";
+        boolean isStaringWith = name.startsWith(prefix);
+        //ta metoda .starWith() robi takie cos c ow koncu jest zrobione:). Musze powtuzyc bo dobrze nie zrozumialem.
+        System.out.println("czy imie " + name + " zaczyna sie od " + prefix + "? : " + isStaringWith);
+
+        String myName = "Sstanislav";
+        boolean startLetterName = myName.startsWith(prefix);
+        String myNameTxt = startLetterName ? "tak" : "nie";
+        System.out.println( "Czy moje imie " + myName + " zaczyna sie na " + prefix + "? : " + myNameTxt);
+        //dodalem tu juz samodzielnie taka opcje zeby wynik byl "tak" czy "nie". Biarac przyklad popredniego.
     }
 
 }
