@@ -1,5 +1,6 @@
 package lesson1;
 
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Numbers {
@@ -33,6 +34,12 @@ public class Numbers {
         int number2 = (int) (System.currentTimeMillis() % 7);
 
         System.out.println("Ile bedzie " + number1 + " + " + number2 + " ?");
+
+        System.out.println("Int min to " + Integer.MIN_VALUE + " a max, to " + Integer.MAX_VALUE);
+        System.out.println("Long max to " + Long.MAX_VALUE + " a minimum to " + Long.MIN_VALUE);
+        System.out.println("Short max to " + Short.MAX_VALUE + "a min, to " + Short.MIN_VALUE);
+        System.out.println("Floath max to " + Float.MAX_VALUE + " a min to " + Float.MIN_VALUE);
+        System.out.println("Double ma to " + Double.MAX_VALUE + " a min, to " + Double.MIN_VALUE);
 
     }
 
