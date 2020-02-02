@@ -52,6 +52,9 @@ public class SimpleTypes {
         String myNameTxt = startLetterName ? "tak" : "nie";
         System.out.println( "Czy moje imie " + myName + " zaczyna sie na " + prefix + "? : " + myNameTxt);
         //dodalem tu juz samodzielnie taka opcje zeby wynik byl "tak" czy "nie". Biarac przyklad popredniego.
+
+        char lane = 205;
+        System.out.println(lane);
     }
 
 }
